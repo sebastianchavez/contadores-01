@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto · ContaPro</title>
+  <meta name="description" content="Contáctanos. Estamos en Av. Reforma 123, CDMX. Lunes a viernes 9-18h, sábados 9-13h. Tel: +52 55 1234 5678.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { primary: { DEFAULT:'#0f2942', dark:'#081a2c' }, accent: { DEFAULT:'#c9a227', dark:'#a8821a' } },
+        fontFamily: { display: ['Playfair Display','serif'], sans: ['Inter','sans-serif'] }
+      }}
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-white text-slate-800">
+
+  <header class="navbar fixed top-0 inset-x-0 z-50 text-white bg-primary" id="site-navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-2 font-display font-bold text-xl tracking-wide">
+          <span class="w-10 h-10 rounded-lg bg-accent text-primary flex items-center justify-center">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h18v2H3V3zm2 4h14v2H5V7zm-2 4h18v2H3v-2zm2 4h14v2H5v-2zm-2 4h18v2H3v-2z"/></svg>
+          </span>
+          <span>ContaPro</span>
+        </a>
+        <nav class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="nav-link text-sm font-medium">Inicio</a>
+          <a href="nosotros.html" class="nav-link text-sm font-medium">Nosotros</a>
+          <a href="servicios.html" class="nav-link text-sm font-medium">Servicios</a>
+          <a href="precios.html" class="nav-link text-sm font-medium">Precios</a>
+          <a href="galeria.html" class="nav-link text-sm font-medium">Galería</a>
+          <a href="horarios.html" class="nav-link text-sm font-medium">Talleres</a>
+          <a href="contacto.html" class="nav-link text-sm font-medium">Contacto</a>
+        </nav>
+        <a href="contacto.html" class="hidden lg:inline-flex btn-primary text-sm">
+          Agendar asesoría
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4 10.6 5.4 16.2 11H4v2h12.2l-5.6 5.6L12 20l8-8z"/></svg>
+        </a>
+        <button class="lg:hidden nav-toggle p-2" aria-label="Abrir menú" aria-expanded="false">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/></svg>
+        </button>
+      </div>
+      <div class="mobile-menu lg:hidden">
+        <div class="py-4 border-t border-white/10 space-y-1">
+          <a href="index.html" class="nav-link block py-2 px-2 text-sm">Inicio</a>
+          <a href="nosotros.html" class="nav-link block py-2 px-2 text-sm">Nosotros</a>
+          <a href="servicios.html" class="nav-link block py-2 px-2 text-sm">Servicios</a>
+          <a href="precios.html" class="nav-link block py-2 px-2 text-sm">Precios</a>
+          <a href="galeria.html" class="nav-link block py-2 px-2 text-sm">Galería</a>
+          <a href="horarios.html" class="nav-link block py-2 px-2 text-sm">Talleres</a>
+          <a href="contacto.html" class="nav-link block py-2 px-2 text-sm">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Header -->
+  <section class="bg-primary text-white pt-32 pb-20 relative overflow-hidden">
+    <div class="hero-pattern"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-animate="fade-up">
+      <nav class="text-sm text-white/60 mb-4">
+        <a href="index.html" class="hover:text-accent">Inicio</a> / <span class="text-white">Contacto</span>
+      </nav>
+      <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-5">Hablemos de tu <span class="text-accent">negocio</span></h1>
+      <p class="text-white/85 text-lg max-w-3xl">Estamos a un mensaje de distancia. Cuéntanos qué necesitas y te responderemos en menos de 24 horas.</p>
+    </div>
+  </section>
+
+  <!-- Tarjetas de contacto + horarios -->
+  <section class="py-12 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-white rounded-xl p-6 border border-slate-100 text-center" data-animate="fade-up">
+        <div class="w-12 h-12 rounded-lg bg-primary text-accent flex items-center justify-center mx-auto mb-3">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20 15.5a12 12 0 0 1-3.8-.6 1 1 0 0 0-1 .2l-2.2 2.2a15 15 0 0 1-6.7-6.7L8.5 8.4a1 1 0 0 0 .3-1A12 12 0 0 1 8.2 3.5 1 1 0 0 0 7.3 2.5H4.1A2 2 0 0 0 2 4.6 18 18 0 0 0 19.4 22a2 2 0 0 0 2-2v-3.2a1 1 0 0 0-1.4-1.3z"/></svg>
+        </div>
+        <h3 class="font-display font-bold text-primary mb-1">Teléfono</h3>
+        <a href="tel:+525512345678" class="text-slate-600 hover:text-accent transition text-sm">+52 55 1234 5678</a>
+      </div>
+      <div class="bg-white rounded-xl p-6 border border-slate-100 text-center" data-animate="fade-up" style="transition-delay:80ms">
+        <div class="w-12 h-12 rounded-lg bg-primary text-accent flex items-center justify-center mx-auto mb-3">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 4v10h16V8l-8 5L4 8zm0-2 8 5 8-5H4z"/></svg>
+        </div>
+        <h3 class="font-display font-bold text-primary mb-1">Correo</h3>
+        <a href="mailto:contacto@contapro.mx" class="text-slate-600 hover:text-accent transition text-sm break-all">contacto@contapro.mx</a>
+      </div>
+      <div class="bg-white rounded-xl p-6 border border-slate-100 text-center" data-animate="fade-up" style="transition-delay:160ms">
+        <div class="w-12 h-12 rounded-lg bg-primary text-accent flex items-center justify-center mx-auto mb-3">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a8 8 0 0 0-8 8c0 5.5 8 12 8 12s8-6.5 8-12a8 8 0 0 0-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+        </div>
+        <h3 class="font-display font-bold text-primary mb-1">Oficina</h3>
+        <p class="text-slate-600 text-sm">Av. Reforma 123, CDMX</p>
+      </div>
+      <div class="bg-white rounded-xl p-6 border border-slate-100 text-center" data-animate="fade-up" style="transition-delay:240ms">
+        <div class="w-12 h-12 rounded-lg bg-primary text-accent flex items-center justify-center mx-auto mb-3">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm.5-13H11v6l5.2 3 .8-1.3-4.5-2.7V7z"/></svg>
+        </div>
+        <h3 class="font-display font-bold text-primary mb-1">Horario</h3>
+        <p class="text-slate-600 text-sm">L-V 9-18h · S 9-13h</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulario + mapa + horarios -->
+  <section class="py-20 md:py-28">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-5 gap-12">
+
+      <!-- Formulario -->
+      <div class="lg:col-span-3">
+        <div class="bg-white rounded-2xl shadow-md p-8 md:p-10 border border-slate-100" data-animate="fade-right">
+          <span class="eyebrow">Envíanos un mensaje</span>
+          <h2 class="font-display text-3xl font-bold text-primary mb-2">¿Cómo podemos ayudarte?</h2>
+          <p class="text-slate-600 mb-8">Completa el formulario y un asesor se pondrá en contacto en menos de 24 horas.</p>
+
+          <form id="contact-form" novalidate>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
+              <div>
+                <label class="block text-sm font-medium text-slate-700 mb-2" for="nombre">Nombre completo *</label>
+                <input type="text" id="nombre" name="nombre" required class="form-input" placeholder="Ej. Juan Pérez">
+                <div class="form-error">Ingresa tu nombre.</div>
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-slate-700 mb-2" for="email">Correo electrónico *</label>
+                <input type="email" id="email" name="email" required class="form-input" placeholder="tu@correo.com">
+                <div class="form-error">Ingresa un correo válido.</div>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
+              <div>
+                <label class="block text-sm font-medium text-slate-700 mb-2" for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" class="form-input" placeholder="+52 55 0000 0000">
+                <div class="form-error">Ingresa un teléfono válido.</div>
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-slate-700 mb-2" for="servicio">Servicio de interés *</label>
+                <select id="servicio" name="servicio" required class="form-input">
+                  <option value="">Selecciona una opción</option>
+                  <option value="contabilidad">Contabilidad general</option>
+                  <option value="impuestos">Declaración de impuestos</option>
+                  <option value="auditoria">Auditoría</option>
+                  <option value="nomina">Nómina</option>
+                  <option value="asesoria">Asesoría fiscal</option>
+                  <option value="constitucion">Constitución de empresas</option>
+                  <option value="financieros">Estados financieros</option>
+                  <option value="consultoria">Consultoría financiera</option>
+                  <option value="basico">Plan Básico</option>
+                  <option value="profesional">Plan Profesional</option>
+                  <option value="empresarial">Plan Empresarial</option>
+                  <option value="otro">Otro</option>
+                </select>
+                <div class="form-error">Selecciona un servicio.</div>
+              </div>
+            </div>
+            <div class="mb-6">
+              <label class="block text-sm font-medium text-slate-700 mb-2" for="mensaje">Mensaje *</label>
+              <textarea id="mensaje" name="mensaje" rows="5" required class="form-input resize-none" placeholder="Cuéntanos brevemente sobre tu negocio y cómo podemos ayudarte…"></textarea>
+              <div class="form-error">Cuéntanos al menos un poco más.</div>
+            </div>
+            <button type="submit" class="btn-primary text-base w-full md:w-auto">
+              Enviar mensaje
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4 10.6 5.4 16.2 11H4v2h12.2l-5.6 5.6L12 20l8-8z"/></svg>
+            </button>
+            <p class="text-xs text-slate-500 mt-4">Al enviar este formulario aceptas nuestras <a href="privacidad.html" class="underline hover:text-accent">políticas de privacidad</a>.</p>
+          </form>
+        </div>
+      </div>
+
+      <!-- Mapa + horarios -->
+      <div class="lg:col-span-2 space-y-6">
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-slate-100" data-animate="fade-left">
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-99.1700%2C19.4200%2C-99.1500%2C19.4350&layer=mapnik&marker=19.4275%2C-99.1600"
+            width="100%"
+            height="280"
+            style="border:0;"
+            loading="lazy"
+            title="Ubicación ContaPro">
+          </iframe>
+          <div class="p-5">
+            <a href="https://www.openstreetmap.org/?mlat=19.4275&mlon=-99.16#map=17/19.4275/-99.1600" target="_blank" rel="noopener" class="text-accent font-semibold text-sm hover:underline">Ver mapa más grande →</a>
+          </div>
+        </div>
+
+        <div class="bg-primary text-white rounded-2xl p-8" data-animate="fade-left">
+          <h3 class="font-display text-xl font-bold mb-5 flex items-center gap-2">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" class="text-accent"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm.5-13H11v6l5.2 3 .8-1.3-4.5-2.7V7z"/></svg>
+            Horarios de atención
+          </h3>
+          <ul class="space-y-3 text-sm">
+            <li class="flex justify-between items-center pb-3 border-b border-white/10">
+              <span>Lunes a viernes</span>
+              <span class="text-accent font-semibold">9:00 – 18:00</span>
+            </li>
+            <li class="flex justify-between items-center pb-3 border-b border-white/10">
+              <span>Sábado</span>
+              <span class="text-accent font-semibold">9:00 – 13:00</span>
+            </li>
+            <li class="flex justify-between items-center">
+              <span>Domingo</span>
+              <span class="text-white/50">Cerrado</span>
+            </li>
+          </ul>
+          <div class="mt-6 pt-6 border-t border-white/10">
+            <div class="text-xs text-white/60 uppercase tracking-wider mb-2">También en</div>
+            <div class="flex gap-3">
+              <a href="https://wa.me/525587654321" target="_blank" rel="noopener" class="bg-accent text-primary text-sm font-bold px-4 py-2 rounded-lg hover:bg-accent-dark transition">WhatsApp</a>
+              <a href="mailto:contacto@contapro.mx" class="bg-white/10 text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-white/20 transition">Correo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-slate-50 py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-animate="zoom">
+      <h2 class="font-display text-2xl md:text-3xl font-bold text-primary mb-4">¿Prefieres que te llamemos nosotros?</h2>
+      <p class="text-slate-600 mb-6">Déjanos tu número y un asesor se pondrá en contacto en el horario que prefieras.</p>
+      <a href="tel:+525512345678" class="btn-ghost">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20 15.5a12 12 0 0 1-3.8-.6 1 1 0 0 0-1 .2l-2.2 2.2a15 15 0 0 1-6.7-6.7L8.5 8.4a1 1 0 0 0 .3-1A12 12 0 0 1 8.2 3.5 1 1 0 0 0 7.3 2.5H4.1A2 2 0 0 0 2 4.6 18 18 0 0 0 19.4 22a2 2 0 0 0 2-2v-3.2a1 1 0 0 0-1.4-1.3z"/></svg>
+        Llamar ahora
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary-dark text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div>
+          <div class="flex items-center gap-2 font-display font-bold text-xl mb-4">
+            <span class="w-10 h-10 rounded-lg bg-accent text-primary flex items-center justify-center">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h18v2H3V3zm2 4h14v2H5V7zm-2 4h18v2H3v-2zm2 4h14v2H5v-2zm-2 4h18v2H3v-2z"/></svg>
+            </span>
+            <span>ContaPro</span>
+          </div>
+          <p class="text-white/70 text-sm leading-relaxed mb-5">Asesoría contable y fiscal de confianza. Acompañamos a tu negocio en cada paso.</p>
+        </div>
+        <div>
+          <h4 class="font-display font-semibold mb-4">Enlaces</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="footer-link">Inicio</a></li>
+            <li><a href="nosotros.html" class="footer-link">Sobre nosotros</a></li>
+            <li><a href="servicios.html" class="footer-link">Servicios</a></li>
+            <li><a href="precios.html" class="footer-link">Precios</a></li>
+            <li><a href="galeria.html" class="footer-link">Galería</a></li>
+            <li><a href="horarios.html" class="footer-link">Talleres</a></li>
+            <li><a href="contacto.html" class="footer-link">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-display font-semibold mb-4">Servicios</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="servicios.html" class="footer-link">Contabilidad general</a></li>
+            <li><a href="servicios.html" class="footer-link">Declaración de impuestos</a></li>
+            <li><a href="servicios.html" class="footer-link">Auditoría</a></li>
+            <li><a href="servicios.html" class="footer-link">Nómina</a></li>
+            <li><a href="servicios.html" class="footer-link">Constitución de empresas</a></li>
+            <li><a href="servicios.html" class="footer-link">Asesoría fiscal</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-display font-semibold mb-4">Contacto</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-start gap-3 text-white/70">
+              <svg class="text-accent mt-0.5 flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20 15.5a12 12 0 0 1-3.8-.6 1 1 0 0 0-1 .2l-2.2 2.2a15 15 0 0 1-6.7-6.7L8.5 8.4a1 1 0 0 0 .3-1A12 12 0 0 1 8.2 3.5 1 1 0 0 0 7.3 2.5H4.1A2 2 0 0 0 2 4.6 18 18 0 0 0 19.4 22a2 2 0 0 0 2-2v-3.2a1 1 0 0 0-1.4-1.3z"/></svg>
+              <a href="tel:+525512345678" class="footer-link">+52 55 1234 5678</a>
+            </li>
+            <li class="flex items-start gap-3 text-white/70">
+              <svg class="text-accent mt-0.5 flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 4v10h16V8l-8 5L4 8zm0-2 8 5 8-5H4z"/></svg>
+              <a href="mailto:contacto@contapro.mx" class="footer-link">contacto@contapro.mx</a>
+            </li>
+            <li class="flex items-start gap-3 text-white/70">
+              <svg class="text-accent mt-0.5 flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a8 8 0 0 0-8 8c0 5.5 8 12 8 12s8-6.5 8-12a8 8 0 0 0-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+              <span>Av. Reforma 123, Int. 456,<br>Cuauhtémoc, CDMX 06600</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-12 pt-6 flex flex-col md:flex-row justify-between gap-4 text-sm text-white/60">
+        <div>© <span id="footer-year"></span> ContaPro. Todos los derechos reservados.</div>
+        <div class="flex gap-6">
+          <a href="privacidad.html" class="footer-link">Políticas de privacidad</a>
+          <a href="terminos.html" class="footer-link">Términos y condiciones</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/contact.js"></script>
+</body>
+</html>
