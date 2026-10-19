@@ -10,14 +10,14 @@
     name: 'ContaPro',
     tagline: 'Asesoría contable y fiscal de confianza',
     description: 'Más de 15 años respaldando a empresas y emprendedores con servicios contables, fiscales y financieros de excelencia.',
-    phone: '+52 55 1234 5678',
-    phoneRaw: '+525512345678',
-    whatsapp: '+52 55 8765 4321',
-    email: 'contacto@contapro.mx',
-    address: 'Av. Reforma 123, Int. 456, Cuauhtémoc, CDMX, 06600',
-    shortAddress: 'Av. Reforma 123, CDMX',
-    mapEmbed: 'https://www.openstreetmap.org/export/embed.html?bbox=-99.1700%2C19.4200%2C-99.1500%2C19.4350&layer=mapnik&marker=19.4275%2C-99.1600',
-    mapLink: 'https://www.openstreetmap.org/?mlat=19.4275&mlon=-99.16#map=17/19.4275/-99.1600',
+    phone: '+56 9 1234 5678',
+    phoneRaw: '+56912345678',
+    whatsapp: '+56 9 1234 5678',
+    email: 'contacto@contapro.cl',
+    address: 'Santiago, Región Metropolitana, Chile',
+    shortAddress: 'Santiago, Chile',
+    mapEmbed: 'https://www.openstreetmap.org/export/embed.html?bbox=-70.6700%2C-33.4550%2C-70.6300%2C-33.4250&layer=mapnik&marker=-33.4400%2C-70.6500',
+    mapLink: 'https://www.openstreetmap.org/?mlat=-33.4400&mlon=-70.6500#map=14/-33.4400/-70.6500',
     hours: {
       weekdays: 'Lunes a Viernes · 9:00 a 18:00',
       saturday: 'Sábado · 9:00 a 13:00',
@@ -122,13 +122,13 @@
     {
       id: 'basico',
       name: 'Básico',
-      price: '$1,500',
-      period: 'MXN / mes',
+      price: '$89.000',
+      period: 'CLP / mes',
       description: 'Ideal para emprendedores y pequeños negocios que inician su camino fiscal.',
       highlighted: false,
       features: [
         { text: 'Contabilidad mensual', included: true },
-        { text: 'Declaración de IVA e ISR', included: true },
+        { text: 'Declaraciones tributarias', included: true },
         { text: 'Una persona para asesoría', included: true },
         { text: 'Conciliación bancaria (1 cuenta)', included: true },
         { text: 'Estados financieros básicos', included: true },
@@ -139,8 +139,8 @@
     {
       id: 'profesional',
       name: 'Profesional',
-      price: '$3,500',
-      period: 'MXN / mes',
+      price: '$179.000',
+      period: 'CLP / mes',
       description: 'La opción favorita para PyMEs en crecimiento que buscan un aliado integral.',
       highlighted: true,
       features: [
@@ -156,8 +156,8 @@
     {
       id: 'empresarial',
       name: 'Empresarial',
-      price: '$7,500',
-      period: 'MXN / mes',
+      price: '$349.000',
+      period: 'CLP / mes',
       description: 'Servicio premium para corporativos con múltiples entidades y operaciones complejas.',
       highlighted: false,
       features: [
@@ -165,7 +165,7 @@
         { text: 'Nómina ilimitada', included: true },
         { text: 'Auditoría anual', included: true },
         { text: 'Cuentas bancarias ilimitadas', included: true },
-        { text: 'Atención de requerimientos SAT', included: true },
+        { text: 'Atención de requerimientos SII', included: true },
         { text: 'Consultoría estratégica mensual', included: true },
         { text: 'Equipo dedicado in-company', included: true }
       ]
@@ -178,20 +178,20 @@
       a: 'Una vez firmado el contrato iniciamos en un máximo de 5 días hábiles. Para planes Empresarial el arranque puede incluir migración de información histórica.'
     },
     {
-      q: '¿Atienden a clientes fuera de la Ciudad de México?',
-      a: 'Sí. Trabajamos con clientes en toda la República Mexicana de forma 100% remota con firma electrónica y plataformas en la nube.'
+      q: '¿Atienden a clientes fuera de Santiago?',
+      a: 'Sí. Trabajamos con clientes en todo Chile de forma 100% remota con firma electrónica y plataformas en la nube.'
     },
     {
       q: '¿Qué pasa si cambio de régimen fiscal?',
-      a: 'Te acompañamos en la transición sin costo adicional dentro de tu plan, incluyendo avisos al SAT y ajuste de obligaciones.'
+      a: 'Te acompañamos en la transición sin costo adicional dentro de tu plan, incluyendo avisos al SII y ajuste de obligaciones.'
     },
     {
       q: '¿Puedo cambiar de plan en cualquier momento?',
       a: 'Por supuesto. Puedes subir o bajar de plan con aviso de 15 días, y ajustamos la facturación al siguiente periodo.'
     },
     {
-      q: '¿Emitirán comprobantes fiscales (CFDI)?',
-      a: 'Sí. Emitimos CFDI de pago por cada mensualidad para que puedas deducir el servicio.'
+      q: '¿Entregan documentos tributarios?',
+      a: 'La documentación tributaria y las condiciones de facturación se confirman al contratar el servicio.'
     }
   ];
 
@@ -261,7 +261,7 @@
     { name: 'Introducción a la facturación CFDI 4.0',         instructor: 'Carlos Méndez',     duration: '8 horas',  level: 'Principiante', price: '$1,200',  modality: 'Presencial' },
     { name: 'Planeación fiscal para PyMEs',                   instructor: 'María Fernanda Ruiz', duration: '16 horas', level: 'Intermedio',  price: '$2,800',  modality: 'Híbrido' },
     { name: 'Nómina y seguridad social desde cero',           instructor: 'Ana Gabriela Pérez', duration: '12 horas', level: 'Principiante', price: '$1,900',  modality: 'En línea' },
-    { name: 'Cierre anual y dictaminación fiscal',            instructor: 'Roberto Aguilar',   duration: '20 horas', level: 'Avanzado',   price: '$3,500',  modality: 'Presencial' },
+    { name: 'Cierre anual y dictaminación fiscal',            instructor: 'Roberto Aguilar',   duration: '20 horas', level: 'Avanzado',   price: '$179.000',  modality: 'Presencial' },
     { name: 'Excel financiero para contadores',               instructor: 'Lucía Hernández',   duration: '10 horas', level: 'Intermedio',  price: '$1,600',  modality: 'En línea' },
     { name: 'Constitución de empresas paso a paso',           instructor: 'Carlos Méndez',     duration: '6 horas',  level: 'Principiante', price: '$950',    modality: 'En línea' }
   ];

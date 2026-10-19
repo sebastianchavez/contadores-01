@@ -415,3 +415,48 @@ h1, h2, h3, h4 {
   .schedule-table { font-size: 0.85rem; }
   .schedule-table th, .schedule-table td { padding: 0.6rem; }
 }
+
+/* Responsive layout and navigation */
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; }
+.grid > *, .flex > * { min-width: 0; }
+img, iframe { max-width: 100%; }
+.btn-primary, .btn-outline, .btn-ghost { max-width: 100%; justify-content: center; text-align: center; }
+.btn-primary svg, .btn-outline svg, .btn-ghost svg { flex-shrink: 0; }
+.navbar .btn-primary.hidden { display: none; }
+.navbar:has(.mobile-menu.open) { background-color: var(--primary); }
+.mobile-menu.open { max-height: calc(100dvh - 5rem); overflow-y: auto; }
+.pricing-card > .mb-6 > span { display: block; margin-left: 0; }
+.pricing-card .text-4xl { font-size: clamp(1.875rem, 3vw, 2.25rem); }
+.toast { right: 1rem; bottom: 1rem; max-width: calc(100% - 2rem); opacity: 0; visibility: hidden; transform: translateY(1rem); transition: opacity .25s, transform .25s, visibility .25s; }
+.toast.show { opacity: 1; visibility: visible; transform: translateY(0); }
+@media (min-width: 1280px) { .navbar .btn-primary.hidden { display: inline-flex; } }
+@media (max-width: 1279px) {
+ .navbar > div > .flex > a:first-child { flex-shrink: 0; }
+ .nav-toggle { min-width: 44px; min-height: 44px; flex-shrink: 0; }
+ .pricing-card.highlighted { transform: none; }
+}
+@media (max-width: 767px) {
+ [data-animate="fade-left"], [data-animate="fade-right"] { transform: translateY(24px); }
+ [data-animate].visible { transform: none; }
+}
+@media (max-width: 639px) {
+ .hero-gradient h1 { font-size: clamp(1.875rem, 7.6vw, 2.5rem); overflow-wrap: break-word; }
+ .hero-gradient > .grid { gap: 2rem; }
+ .hero-gradient .flex.flex-wrap > a { width: 100%; }
+ .pricing-card, #contact-form { overflow-wrap: anywhere; }
+ .pricing-card, div:has(> #contact-form) { padding: 1.5rem; }
+ footer .flex.gap-6 { flex-wrap: wrap; gap: 1rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+ html { scroll-behavior: auto; }
+ [data-animate] { opacity: 1; transform: none; transition: none; }
+}
+
+/* Keep horizontal reveal offsets within the page gutters. */
+@media (min-width: 768px) {
+  [data-animate='fade-left'] { transform: translateX(16px); }
+  [data-animate='fade-right'] { transform: translateX(-16px); }
+  [data-animate].visible { transform: translate(0, 0) scale(1); }
+}
+

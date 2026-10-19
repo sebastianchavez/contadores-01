@@ -73,11 +73,11 @@
       setTimeout(() => {
         const data = Object.fromEntries(new FormData(form).entries());
         // En un entorno real, aquí iría fetch(...) a un endpoint.
-        console.log('[ContaPro] Mock submit:', data);
+        // Demo: no se transmite información a un servidor.
 
         const toast = window.CONTA_TOAST;
         if (toast) {
-          toast(`Gracias ${data.nombre.split(' ')[0]}, hemos recibido tu mensaje. Te contactaremos en menos de 24 h.`, { title: '¡Mensaje enviado!' });
+          toast(`Gracias ${data.nombre.split(' ')[0]}, esta es una demostración; tu mensaje no se ha enviado.`, { title: 'Formulario de demostración' });
         }
         form.reset();
         submitBtn.disabled = false;
@@ -86,5 +86,6 @@
     });
   });
 
+  function $(sel, ctx) { return (ctx || document).querySelector(sel); }
   function $$(sel, ctx) { return Array.from((ctx || document).querySelectorAll(sel)); }
 })();

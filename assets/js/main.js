@@ -95,10 +95,19 @@
     }
 
     if (toggle && menu) {
-      toggle.addEventListener('click', () => {
-        menu.classList.toggle('open');
-        toggle.setAttribute('aria-expanded', menu.classList.contains('open'));
+      const setOpen = (open) => {
+        menu.classList.toggle('open', open);
+        menu.inert = !open;
+        toggle.setAttribute('aria-expanded', String(open));
+        toggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+      };
+      setOpen(false);
+      toggle.addEventListener('click', () => setOpen(!menu.classList.contains('open')));
+      menu.addEventListener('click', (event) => { if (event.target.closest('a')) setOpen(false); });
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && menu.classList.contains('open')) { setOpen(false); toggle.focus(); }
       });
+      window.matchMedia('(min-width: 1280px)').addEventListener('change', () => setOpen(false));
     }
 
     const path = location.pathname.split('/').pop() || 'index.html';
@@ -148,9 +157,9 @@
         const t = Math.min((now - start) / duration, 1);
         const eased = 1 - Math.pow(1 - t, 3);
         const value = Math.floor(eased * target);
-        node.textContent = value.toLocaleString('es-MX') + suffix;
+        node.textContent = value.toLocaleString('es-CL') + suffix;
         if (t < 1) requestAnimationFrame(step);
-        else node.textContent = target.toLocaleString('es-MX') + suffix;
+        else node.textContent = target.toLocaleString('es-CL') + suffix;
       };
       requestAnimationFrame(step);
     };
